@@ -1,0 +1,11 @@
+GET http://127.0.0.1:3344
+
+###
+
+POST http://127.0.0.1:3344/webhookwordpress/rapuncel
+Content-Type: application/json
+
+{
+    "name" : "Miguel"
+}
+

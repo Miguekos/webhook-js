@@ -1,0 +1,157 @@
+[{
+        "plato_id": 6,
+        "name": "Combinado",
+        "ingredients": [{
+                "name": "tomato",
+                "cant": 2
+            },
+            {
+                "name": "lemon",
+                "cant": 2
+            },
+            {
+                "name": "potato",
+                "cant": 2
+            },
+            {
+                "name": "rice",
+                "cant": 4
+            },
+            {
+                "name": "ketchup",
+                "cant": 4
+            },
+            {
+                "name": "lettuce",
+                "cant": 4
+            },
+            {
+                "name": "onion",
+                "cant": 4
+            },
+            {
+                "name": "cheese",
+                "cant": 4
+            },
+            {
+                "name": "meat",
+                "cant": 4
+            },
+            {
+                "name": "chicken",
+                "cant": 4
+            }
+        ]
+    },
+
+    {
+        "plato_id": 5,
+        "name": "Carne y Pollo",
+        "ingredients": [{
+                "name": "tomato",
+                "cant": 2
+            },
+            {
+                "name": "potato",
+                "cant": 2
+            },
+            {
+                "name": "chicken",
+                "cant": 2
+            },
+            {
+                "name": "meat",
+                "cant": 4
+            }
+        ]
+    },
+
+    {
+        "plato_id": 4,
+        "name": "Ensalada",
+        "ingredients": [{
+                "name": "tomato",
+                "cant": 8
+            },
+            {
+                "name": "lettuce",
+                "cant": 6
+            },
+            {
+                "name": "lemon",
+                "cant": 8
+            },
+            {
+                "name": "potato",
+                "cant": 2
+            }
+        ]
+    },
+
+    {
+        "plato_id": 3,
+        "name": "Carne con queso",
+        "ingredients": [{
+                "name": "onion",
+                "cant": 8
+            },
+            {
+                "name": "cheese",
+                "cant": 4
+            },
+            {
+                "name": "ketchup",
+                "cant": 2
+            },
+            {
+                "name": "meat",
+                "cant": 2
+            }
+        ]
+    },
+
+    {
+        "plato_id": 2,
+        "name": "Arroz con Pollo",
+        "ingredients": [{
+                "name": "tomato",
+                "cant": 4
+            },
+            {
+                "name": "cheese",
+                "cant": 6
+            },
+            {
+                "name": "rice",
+                "cant": 6
+            },
+            {
+                "name": "chicken",
+                "cant": 4
+            }
+        ]
+    },
+
+    {
+        "plato_id": 1,
+        "name": "Arroz con Carne",
+        "ingredients": [{
+                "name": "tomato",
+                "cant": 4
+            },
+            {
+                "name": "cheese",
+                "cant": 8
+            },
+            {
+                "name": "rice",
+                "cant": 6
+            },
+            {
+                "name": "meat",
+                "cant": 4
+            }
+        ]
+    }
+
+]

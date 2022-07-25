@@ -1,0 +1,41 @@
+[{
+        "name": "chicken",
+        "cant": 5
+    },
+    {
+        "name": "meat",
+        "cant": 5
+    },
+    {
+        "name": "cheese",
+        "cant": 5
+    },
+    {
+        "name": "onion",
+        "cant": 5
+    },
+    {
+        "name": "lettuce",
+        "cant": 5
+    },
+    {
+        "name": "ketchup",
+        "cant": 5
+    },
+    {
+        "name": "rice",
+        "cant": 5
+    },
+    {
+        "name": "potato",
+        "cant": 5
+    },
+    {
+        "name": "lemon",
+        "cant": 5
+    },
+    {
+        "name": "tomato",
+        "cant": 5
+    }
+]
