@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: webhook-dev
+  name: webhook-service
+  labels:
+    app: webhook-app-dev
+spec:
+  type: ClusterIP
+  selector:
+    app: webhook-app-dev
+  ports:
+    - port: 3344
+      targetPort: 3344
+      name: http

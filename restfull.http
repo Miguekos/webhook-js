@@ -9,3 +9,15 @@ Content-Type: application/json
     "name" : "Miguel"
 }
 
+
+###
+GET http://127.0.0.1:3344/webhookwordpress/rapuncel
+
+###
+POST https://apipro.apps.com.pe/webhookwordpress/rapuncel
+Content-Type: application/json
+
+{
+    "name" : "Miguel"
+}
+

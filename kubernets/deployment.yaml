@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: webhook-dev
+  name: webhook-app
+  labels:
+    app: webhook-app-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webhook-app-dev
+  template:
+    metadata:
+      labels:
+        app: webhook-app-dev
+    spec:
+      containers:
+        - name: webhook
+          image: miguekos1233/webhook-js:1.0
+          env:
+            - name: PORT
+              value: '3344'
+            - name: NODEJS_IP
+              value: '0.0.0.0'
+            - name: VERSION
+              value: 'v1.0'
+            - name: IP_MONGO
+              value: 'mongodb://95.111.235.214:32768'
+            - name: DB
+              value: 'webhook'
+            - name: AMQP
+              value: 'amqp://guest:guest@207.244.228.209:30301'
+            - name: PREFIX
+              value: 'webhookwordpress'
+          ports:
+            - containerPort: 3344

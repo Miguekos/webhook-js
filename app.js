@@ -1,11 +1,17 @@
 const express = require('express');
 const app = express();
 var http = require('http').Server(app);
+const prefix = `${process.env.PREFIX}`;
 var io = require('socket.io')(http, {
+  path: `/${prefix}/websocket`,
   cors: {
-    origin: ['http://127.0.0.1:8080', 'http://localhost:8080'],
+    origin: [
+      'http://127.0.0.1:8080',
+      'http://localhost:8080',
+      'https://wooadmin.apps.com.pe',
+    ],
     methods: ['GET', 'POST'],
-    allowedHeaders: ['template-header'],
+    // allowedHeaders: ['template-header'],
     credentials: true,
   },
   pingTimeout: 180000,
@@ -36,10 +42,8 @@ app.get('/', (req, res) => {
 // CONTROLLERS
 // const { validador_de_pedidos } = require('./api/controllers/validador_de_pedidos')
 
-const prefix = `${process.env.PREFIX}`
-
-app.use( `/${prefix}/`, require('./api/routes/helloworld'));
-app.use( `/${prefix}/`, require('./api/routes/rapuncel'));
+app.use(`/${prefix}/`, require('./api/routes/helloworld'));
+app.use(`/${prefix}/`, require('./api/routes/rapuncel'));
 
 // load queue
 // validador_de_pedidos()
