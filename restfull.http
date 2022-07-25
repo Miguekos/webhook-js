@@ -13,6 +13,10 @@ Content-Type: application/json
 ###
 GET http://127.0.0.1:3344/webhookwordpress/rapuncel
 
+
+###
+GET https://apipro.apps.com.pe/webhookwordpress/rapuncel
+
 ###
 POST https://apipro.apps.com.pe/webhookwordpress/rapuncel
 Content-Type: application/json

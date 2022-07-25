@@ -17,7 +17,14 @@ spec:
     spec:
       containers:
         - name: webhook
-          image: miguekos1233/webhook-js:1.0
+          image: miguekos1233/webhook-js:1.1
+          resources:
+            requests:
+              cpu: '100m'
+              memory: 128Mi
+            limits:
+              cpu: '200m'
+              memory: 256Mi
           env:
             - name: PORT
               value: '3344'
