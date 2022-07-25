@@ -4,8 +4,10 @@ const clienteMongo = require('../database/mongo');
 
 const webhook = async (req, res = response) => {
   try {
-    await clienteMongo.INSERT_ONE('rapuncel', req.body);
-    global.io.emit('woorapuncel', req.body)
+    const body = req.body;
+    console.log('🚀 ~ file: rapuncel.js ~ line 8 ~ webhook ~ body', body);
+    await clienteMongo.INSERT_ONE('rapuncel', body);
+    global.io.emit('woorapuncel', body);
     return res.status(200).json('WebhookInsertado');
   } catch (error) {
     console.log(error);

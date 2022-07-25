@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: webhook
-          image: miguekos1233/webhook-js:1.1
+          image: miguekos1233/webhook-js:1.2
           resources:
             requests:
               cpu: '100m'
@@ -33,7 +33,7 @@ spec:
             - name: VERSION
               value: 'v1.0'
             - name: IP_MONGO
-              value: 'mongodb://95.111.235.214:32768'
+              value: 'mongodb://adminuser:password123@207.244.228.108:32002/?authSource=admin'
             - name: DB
               value: 'webhook'
             - name: AMQP
